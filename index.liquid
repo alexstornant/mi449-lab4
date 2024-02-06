@@ -1,7 +1,17 @@
 ---
 layout: layout.liquid
-title: 11ty Boilerplate
+title: Planet Playing Cards
 ---
 
-<h1>Yet Another 11ty <strong>Boilerplate</strong></h1>
-<img alt="pine" src="/images/pine.png" width="50" />
+<h1 class="title">Planet Playing Cards</h1>
+<div class="grid-container">
+    {% include 'sun' %}
+    {% planet-card "#858fdd", "#ecd67e", "Mercury", "0.39 AUs" %}
+    {% planet-card "#ad8d54", "#f8e2b0", "Venus", "0.72 AUs" %}
+    {% planet-card "#9fc164", "#4f4cb0", "Earth", "1 AUs" %}
+    {% planet-card "#c1440e", "#e77d11", "Mars", "1.52 AUs" %}
+    {% planet-card "#ebf3f6", "#c99039", "Jupiter", "5.20 AUs" %}
+    {% planet-card "#c3924f", "#fceead", "Saturn", "9.58 AUs" %}
+    {% planet-card "#2e84ce", "#afdbf5", "Uranus", "19.22 AUs" %}
+    {% planet-card "#74d6fd", "#1f2255", "Neptune", "30.05 AUs" %}
+</div>
